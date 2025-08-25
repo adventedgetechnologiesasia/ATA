@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdventEdge Technologies Asia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#0b2c55; --ink:#111; --muted:#d7def7; }
+    *{box-sizing:border-box}
+    body {margin:0;font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:var(--ink);line-height:1.6;}
+    header {background:var(--brand);color:#fff;padding:72px 20px;text-align:center;}
+    header h1 {font-size:40px;margin:16px 0 0 0;}
+    header p {max-width:800px;margin:16px auto 0;font-size:18px;color:var(--muted);}
+    .brand-box {display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--brand);padding:8px 12px;border-radius:12px;}
+    .brand-box img {height:48px;width:auto;display:block;}
+    nav {margin-top:24px;}
+    nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:600;}
+    nav a:hover {text-decoration:underline}
+    section {padding:56px 20px;max-width:1100px;margin:auto;}
+    section h2 {font-size:28px;margin-bottom:20px;color:var(--brand);}
+    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+    .card {background:#f9f9f9;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+    footer {background:var(--brand);color:#c8d3ff;padding:30px;text-align:center;margin-top:40px;}
+    img {max-width:100%;border-radius:8px;}
+    .downloads a {display:block;padding:12px 15px;margin:8px 0;border:1px solid #ddd;border-radius:8px;text-decoration:none;color:var(--brand);font-weight:600;}
+    .downloads a:hover {background:#f5f7fb}
+    a {color:var(--brand)}
+    /* Lightbox styles for services & delivery only */
+    #services img, #delivery img { cursor: zoom-in; }
+    .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 24px; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+    .lightbox .close { position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,.2); color: #fff; border: none; font-size: 28px; padding: 6px 12px; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand-box">
+      <img src="logo.png" alt="AdventEdge Technologies Asia logo">
+      <strong>AdventEdge Technologies Asia</strong>
+    </div>
+    <h1>Reliable IT Services Across Asia-Pacific</h1>
+    <p>24/7 multilingual support • 20+ countries • 600+ engineers • Proven &gt;95% SLA adherence</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#delivery">How We Deliver</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Services &amp; Capabilities</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cybersecurity</h3>
+        <p>Local Security Operations Centre, ISO advisory, testing, and AI-assisted detection for fast response.</p>
+        <img src="cybersecurity-slide.png" alt="Cybersecurity visual">
+      </div>
+      <div class="card">
+        <h3>Managed Services</h3>
+        <p>End-user and infrastructure support with SLA-driven monitoring and observability across SOC/NOC.</p>
+        <img src="managed-services-slide.png" alt="Managed Services visual">
+      </div>
+      <div class="card">
+        <h3>Digital Transformation</h3>
+        <p>Cloud migration, automation, analytics, and modern workplace solutions that improve resilience.</p>
+        <img src="digital-transformation-slide.png" alt="Digital Transformation visual">
+      </div>
+      <div class="card">
+        <h3>Hardware Support</h3>
+        <p>Multi-vendor break-fix, IMAC, smart-hands, and logistics backed by distributed inventory hubs.</p>
+        <img src="hardware-support-slide.png" alt="Hardware Support visual">
+      </div>
+    </div>
+  </section>
+
+  <section id="delivery">
+    <h2>How We Deliver</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>24/7 Support</h3>
+        <p>Always-on Global Call Centre with multilingual teams available via phone, email, and ticketing.</p>
+        <img src="24-7-support-slide.png" alt="24/7 Support visual">
+      </div>
+      <div class="card">
+        <h3>Ticketing &amp; Prioritisation</h3>
+        <p>Structured lifecycle from creation to closure with P1–P4 priorities that align to business impact.</p>
+        <img src="ticketing-slide.png" alt="Ticketing visual">
+      </div>
+      <div class="card">
+        <h3>Escalation &amp; RCA</h3>
+        <p>Clear escalation path from Call Centre to Technical Account Manager; RCA initiated if an SLA is missed.</p>
+        <img src="escalation-matrix.png" alt="Escalation visual">
+      </div>
+      <div class="card">
+        <h3>Onboarding &amp; Warehousing</h3>
+        <p>QA-driven onboarding and OEM certifications for engineers; distributed hubs accelerate parts logistics.</p>
+        <img src="warehousing-slide.png" alt="Warehousing visual">
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <h2>Resources / Insights</h2>
+    <div class="downloads">
+      <a href="client-presentation.pdf" download>Client Presentation (GEODIS/NCR)</a>
+      <a href="group-solutions.pdf" download>Group Solutions &amp; Services</a>
+      <a href="delivery-model.pdf" download>PD Asia Delivery Model Framework</a>
+      <a href="roadmap.pdf" download>Reliability &amp; Strategic Roadmap</a>
+      <a href="intro-video.mp4" download>Company Introduction Video</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>AdventEdge Technologies Asia (ATA)</strong> is part of a regional group delivering reliable IT services across APAC, alongside Performance Data Japan and Performance Data (Asia).</p>
+    <p>Our values are <strong>Integrity</strong>, <strong>Professionalism</strong>, and <strong>Customer Satisfaction</strong>. With over 600 professionals across 20+ countries, we pair regional scale with local expertise.</p>
+    <img src="regional-map.png" alt="Regional Footprint">
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Global Call Centre (24/7):</strong> +1 408 457 0757</p>
+    <p><strong>Email:</strong> <a href="mailto:callcenter@performancedata-asia.com">callcenter@performancedata-asia.com</a></p>
+    <p><strong>Regional Offices:</strong> Singapore • Malaysia • Japan</p>
+    <img src="offices-slide.png" alt="Regional Offices">
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> AdventEdge Technologies Asia. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" tabindex="-1">
+    <img id="lightbox-img" alt="Expanded image">
+    <button class="close" aria-label="Close">&times;</button>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Lightbox logic (services & delivery only)
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightbox-img');
+    const lbClose = lb.querySelector('.close');
+
+    function openLightbox(src, alt) {
+      lbImg.src = src;
+      lbImg.alt = alt || '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      lb.focus();
+    }
+    function closeLightbox() {
+      lb.classList.remove('open');
+      lbImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('#services img, #delivery img').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.src, img.alt));
+    });
+
+    lb.addEventListener('click', (e) => {
+      if (e.target === lb || e.target === lbClose) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+    });
+  </script>
+</body>
+</html>
